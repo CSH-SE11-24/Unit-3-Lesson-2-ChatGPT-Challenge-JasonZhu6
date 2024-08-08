@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comp Sci High</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: green;
+      /* Green background */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header,
+    footer {
+      background-color: yellow;
+      /* Yellow header and footer */
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    header a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      /* Black text color */
+    }
+
+    main a {
+      text-decoration: none;
+      color: #000;
+      /* Black text color */
+    }
+
+    h1 {
+      font-size: 36px;
+      /* Bigger font size for the title */
+      margin-bottom: 10px;
+      /* Add space below the title */
+      color: yellow;
+      /* Yellow text color for the title */
+    }
+
+    p.small-font {
+      font-size: 12px;
+      /* Smaller font size for the provided sentence */
+    }
+
+    .email-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="email"] {
+      padding: 8px;
+      width: 200px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .join-button {
+      background-color: green;
+      /* Green button */
+      color: yellow;
+      /* Yellow text color */
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      width: 48%;
+      /* Equal width with a little space between them */
+      margin-right: 2%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="https://unit-1-lesson-14-entrance-ticket-solution.se12-1.repl.co/index.html">Home</a>
+    <a href="https://unit-1-lesson-14-entrance-ticket-solution.se12-1.repl.co/moreinfo.html">More Info</a>
+  </header>
+
+  <main>
+    <h1>Comp Sci High</h1>
+    <p class="small-font">Comp Sci High is the best school ever because it has sick teachers like Mr. Berrios and Mr. Chambers.</p>
+  </main>
+
+  <!-- Added image container with two images -->
+  <div class="image-container">
+    <img src="berrios.jpeg" alt="berrios">
+    <img src="chambers.jpeg" alt="chambers">
+  </div>
+
+  <footer>
+    <!-- Moved the text to the footer above the email input and "Join us!" button -->
+    <p>Are you interested in joining the <a href="https://www.compscihigh.org/our-team">CSH family</a>?</p>
+
+    <div class="email-container">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <button class="join-button">Join us!</button>
+    </div>
+  </footer>
+
+</body>
+
+</html>
